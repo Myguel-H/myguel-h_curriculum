@@ -1,0 +1,247 @@
+:root {
+    --orange: #e8590c;
+    --black: #1a1a1a;
+    --gray: #6b6b6b;
+    --line: #e5e5e5;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: #fff;
+    color: var(--black);
+    font-family: system-ui, -apple-system, Arial, sans-serif;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+
+  /* ───────── Header ───────── */
+  header {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding-bottom: 32px;
+    border-bottom: 2px solid var(--orange);
+  }
+
+  .photo-wrap {
+    flex-shrink: 0;
+  }
+
+  .photo-render {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--orange);
+    display: block;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  #name {
+    font-size: 1.9rem;
+    line-height: 1.15;
+    color: var(--black);
+  }
+
+  #position {
+    font-size: 1.05rem;
+    color: var(--orange);
+    font-weight: 500;
+    margin-top: 4px;
+  }
+
+  #contact {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+
+  .emails {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .emails span {
+    color: var(--black);
+    padding-bottom: 2px;
+    border-bottom: 1px dashed var(--line);
+  }
+
+  /* ───────── Sumário ───────── */
+  .sumary {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+    justify-content: center;
+  }
+
+  .sumary a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .sumary a:hover {
+    color: var(--orange);
+    border-bottom-color: var(--orange);
+  }
+
+  /* ───────── Redes sociais ───────── */
+  .social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+    justify-content: center;
+  }
+
+  .social-media div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .social-media img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  .social-media a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .social-media a:hover {
+    color: var(--orange);
+  }
+
+  /* Nova regra para alinhar o ícone com o email */
+  .contact-row {
+    display: flex;
+    align-items: center;
+    /* centraliza o ícone e o texto na mesma linha horizontal */
+    gap: 8px;
+    /* espaço entre o ícone e o texto */
+    margin-top: 10px;
+  }
+
+  .contact-row img {
+    width: 20px;
+    /* tamanho do ícone */
+    height: 20px;
+    object-fit: contain;
+  }
+
+  #contact {
+    color: var(--gray);
+    font-size: 0.95rem;
+    margin: 0;
+    /* tira a margem padrão do parágrafo */
+  }
+
+  /* ───────── Área principal ───────── */
+  main {
+    margin-top: 56px;
+  }
+
+  section {
+    margin-bottom: 48px;
+  }
+
+  section>h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--black);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid var(--orange);
+    display: inline-block;
+  }
+
+  /* Itens listados um abaixo do outro, separados por linha */
+  .item {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .item:last-child {
+    border-bottom: none;
+  }
+
+  .item h3 {
+    font-size: 1rem;
+    color: var(--black);
+    margin-bottom: 4px;
+  }
+
+  .item .periodo {
+    font-style: italic;
+    color: var(--orange);
+    font-size: 0.88rem;
+    margin-bottom: 6px;
+  }
+
+  .item p {
+    color: var(--black);
+    font-size: 0.95rem;
+  }
+
+  /* ───────── Footer ───────── */
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    color: var(--gray);
+    font-size: 0.85rem;
+  }
+
+  footer img {
+    width: 18px;
+    opacity: 0.45;
+    margin-bottom: 6px;
+    display: block;
+    margin-inline: auto;
+  }
+
+  .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  .gallery-item img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    display: block;
+    border: 1px solid #777;
+  }
