@@ -219,6 +219,10 @@
     text-align: center;
     color: var(--gray);
     font-size: 0.85rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
   }
 
   footer img {

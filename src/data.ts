@@ -54,8 +54,12 @@ export const educations: Education[] = [
 
 export const futuproj: FutureProjects[] = [
   {
-    name: "testando",
-    description: "testando121314313138913"
+    name: "Desenvolvimento de uma aplicação web para disseminação e publicação de conteúdo técnico entre desenvolvedores iniciantes",
+    description: "Idealização de um projeto para incentivar novos desenvolvedores. Muitas das vezes o iniciante não sabem por onde começar ou se perdem no caminho pela quantidade de informação em abundancia, isso acarreta na desistência de muitos."
+  },
+    {
+    name: "Criação de um robô 2WD com arduino e qualquer coisa que eu achar no ferro velho ou no chão do meu quarto",
+    description: "Desenvolvimento de um robô de duas rodas motrizes focado em hardware livre. O objetivo é demonstrar que a robótica é acessível a todos, utilizando materiais recicláveis, sucata eletrônica e componentes de baixo custo para estimular a criatividade, a resolução de problemas e o aprendizado prático de programação e eletrônica."
   },
 ];
 

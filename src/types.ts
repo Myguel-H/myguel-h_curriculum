@@ -12,12 +12,6 @@ export interface Experience {
     description: string;
 }
 
-export interface Certificate {
-    name: string;
-    duration: string;   
-    institution: string;
-}
-
 export interface Education {
     duration: string;
     institution: string;
@@ -33,4 +27,10 @@ export interface Projects {
 export interface FutureProjects {
     name: String;
     description: String;
+}
+
+export interface Certificate {
+    name: string;
+    duration: string;   
+    institution: string;
 }
