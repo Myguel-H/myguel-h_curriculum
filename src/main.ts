@@ -1,6 +1,7 @@
 import './style.css';
+import { setupThemeToggle } from './theme';
 import { personalData, certificates, educations, experiences, futuproj, proj } from './data';
-import { renderCertificates, renderExperiences, renderEducations, renderFutureProjects } from './render';
+import { renderCertificates, renderExperiences, renderEducations, renderFutureProjects, renderProjects } from './render';
 
 function getEl(id: string): HTMLElement {
   const el = document.getElementById(id);
@@ -23,5 +24,7 @@ contactEl.innerHTML = contactItems
 renderExperiences(getEl("experiences"), experiences);
 renderEducations(getEl("educations"), educations);
 renderCertificates(getEl("certificates"), certificates);
-renderFutureProjects(getEl("proj"), proj);
+renderProjects(getEl("proj"), proj);
 renderFutureProjects(getEl("futuproj"), futuproj);
+
+setupThemeToggle();

@@ -1,9 +1,29 @@
 :root {
-    --orange: #e8590c;
-    --black: #1a1a1a;
-    --gray: #6b6b6b;
-    --line: #e5e5e5;
-  }
+  --orange: #e8590c;
+  --orange-soft: #f76707;
+  --black: #1a1a1a;
+  --gray: #6b6b6b;
+  --line: #e5e5e5;
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --img-border: #777;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Tema escuro: marcado via <body class="dark">
+   (variáveis com valor literal, não herança de :root — assim a troca
+   em runtime recalcula a cor de verdade) */
+body.dark {
+  --orange: #ff7a1a;
+  --orange-soft: #ffa94d;
+  --bg: #0f1115;
+  --text: #e8e8e8;
+  --muted: #a0a0a0;
+  --line: #2a2d34;
+  --img-border: #4a4d55;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
 
   * {
     box-sizing: border-box;
@@ -12,13 +32,14 @@
   }
 
   body {
-    background: #fff;
-    color: var(--black);
+    background: var(--bg);
+    color: var(--text);
     font-family: system-ui, -apple-system, Arial, sans-serif;
     line-height: 1.5;
     max-width: 900px;
     margin: 0 auto;
     padding: 40px 24px;
+    transition: background 0.25s ease, color 0.25s ease;
   }
 
   /* ───────── Header ───────── */
@@ -52,7 +73,7 @@
   #name {
     font-size: 1.9rem;
     line-height: 1.15;
-    color: var(--black);
+    color: var(--text);
   }
 
   #position {
@@ -63,7 +84,7 @@
   }
 
   #contact {
-    color: var(--gray);
+    color: var(--muted);
     font-size: 0.9rem;
     margin-top: 8px;
   }
@@ -77,9 +98,33 @@
   }
 
   .emails span {
-    color: var(--black);
+    color: var(--text);
     padding-bottom: 2px;
     border-bottom: 1px dashed var(--line);
+  }
+
+  /* ───────── Botão de tema ───────── */
+  .theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1.15rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: background 2s ease, color 2s ease, transform 1.50s ease;
+  }
+
+  .theme-toggle:hover {
+    transform: scale(1.08);
   }
 
   /* ───────── Sumário ───────── */
@@ -93,7 +138,7 @@
   }
 
   .sumary a {
-    color: var(--black);
+    color: var(--text);
     text-decoration: none;
     font-weight: 500;
     padding-bottom: 4px;
@@ -130,7 +175,7 @@
   }
 
   .social-media a {
-    color: var(--black);
+    color: var(--text);
     text-decoration: none;
     font-size: 0.9rem;
   }
@@ -157,7 +202,7 @@
   }
 
   #contact {
-    color: var(--gray);
+    color: var(--muted);
     font-size: 0.95rem;
     margin: 0;
     /* tira a margem padrão do parágrafo */
@@ -176,7 +221,7 @@
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--black);
+    color: var(--text);
     padding-bottom: 8px;
     margin-bottom: 8px;
     border-bottom: 2px solid var(--orange);
@@ -195,7 +240,7 @@
 
   .item h3 {
     font-size: 1rem;
-    color: var(--black);
+    color: var(--text);
     margin-bottom: 4px;
   }
 
@@ -207,8 +252,12 @@
   }
 
   .item p {
-    color: var(--black);
+    color: var(--text);
     font-size: 0.95rem;
+  }
+
+  .item a {
+    color: var(--orange);
   }
 
   /* ───────── Footer ───────── */
@@ -217,7 +266,7 @@
     padding-top: 24px;
     border-top: 1px solid var(--line);
     text-align: center;
-    color: var(--gray);
+    color: var(--muted);
     font-size: 0.85rem;
     display: flex;
     text-align: center;
@@ -247,5 +296,5 @@
     width: auto;
     height: auto;
     display: block;
-    border: 1px solid #777;
+    border: 1px solid var(--img-border);
   }

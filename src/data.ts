@@ -38,7 +38,7 @@ export const educations: Education[] = [
   {
     duration: "2023 - Atual",
     institution: "Universidade Tecnológica Federal do Paraná (UTFPR)",
-    summary: "Graduação em Sistemas de Informação (em andamento, 6º período).",
+    summary: "Graduação em Sistemas de Informação (em andamento, 7º período).",
   },
   {
     duration: "2020 - 2022",
@@ -57,7 +57,7 @@ export const futuproj: FutureProjects[] = [
     name: "Desenvolvimento de uma aplicação web para disseminação e publicação de conteúdo técnico entre desenvolvedores iniciantes",
     description: "Idealização de um projeto para incentivar novos desenvolvedores. Muitas das vezes o iniciante não sabem por onde começar ou se perdem no caminho pela quantidade de informação em abundancia, isso acarreta na desistência de muitos."
   },
-    {
+  {
     name: "Criação de um robô 2WD com arduino e qualquer coisa que eu achar no ferro velho ou no chão do meu quarto",
     description: "Desenvolvimento de um robô de duas rodas motrizes focado em hardware livre. O objetivo é demonstrar que a robótica é acessível a todos, utilizando materiais recicláveis, sucata eletrônica e componentes de baixo custo para estimular a criatividade, a resolução de problemas e o aprendizado prático de programação e eletrônica."
   },
@@ -67,27 +67,37 @@ export const proj: Projects[] = [
   {
     name: "Arphya",
     description: "Uma aplicação web em PHP e Postgresql com objetivo de disseminar conhecimento através de publicações e fontes confiáveis com gerenciamento para administradores.",
-    link: "https://github.com/Myguel-H/Arphya.git",
+    link: "<a href='https://github.com/Myguel-H/Arphya.git'>Link do Projeto</a>",
   },
-
-    {
+  {
+    name: "Find your Certificate",
+    description: "Um app para estudantes da utfpr que queiram buscar seus certificados e não lembram quais palestrar ou eventos participaram. Leia o README (Documentação).",
+    link: "<a href='http://gitea.arphya.com.br/Myguel/Utfpr-Search-Certificate.git'>Link do Projeto</a>",
+  },
+  {
+    name: "Gestão Atas - Compras",
+    description: "Projetinho simples usando LLM para ajudar meus companheiros(a) nas conferencias de caixas no setor de compras-CONSUD. Um script em Typescript lê o padrão de ata Nova/Antiga e retorna a opção de inserir no banco de dados(NeonDb) os itens(descritivo, marca, produto e unid. méd. ). Assim agilizando o serviço de idas e vindas ao computador. ",
+    link: "<a href='http://gitea.arphya.com.br/Myguel/Gestao-Atas-Compras.git'>Link do Projeto</a>",
+  },
+  {
     name: "Projeto - Sistemas Distribuído",
     description: "Sistema distribuído em Python, composto por cliente e servidor, simulando uma plataforma de pedidos e entrega de lanches. Desenvolvido como trabalho final da disciplina de Sistemas Distribuídos (2026/1), com responsabilidades divididas entre 23 alunos organizados em 8 setores: comunicação em rede, concorrência, segurança, tolerância a falhas, autenticação, processamento pesado, integração externa e documentação.",
-    link: "https://github.com/jurandii/Projeto_final_Distribuidos_2026_1.git",
+    link: "<a href='https://github.com/jurandii/Projeto_final_Distribuidos_2026_1.git'>Link do projeto</a>",
   },
-    {
-    name: "AgroGuia",
-    description: "Projeto criado durante o hackathon da semana academica de Sistemas de Informação da UTFPR/FB, com o objetivo de auxiliar no gerenciamento de pequenos agricultores/colonos por parte da secretaria de agricultura. Isso levou a incubação de uma empresa pela sprint da UTPFR",
-  },
-    {
+  {
     name: "Arduino - Sensor de Aproximação",
     description: "Um projeto simples feito com Arduino que usa um sensor de proximidade para acionar um alarme quando um objeto é detectado.",
-    link: "https://github.com/Myguel-H/Arduino_Sensor_Aproxima-o.git",
+    link: "<a href='https://github.com/Myguel-H/Arduino_Sensor_Aproxima-o.git'>Link do Projeto</a>",
   },
-    {
+  {
     name: "Arduino - Sistema de Sinaleiro",
     description: "Um projeto simples e facil de fazer com arduino. Objetivo é criar um sistema fisico com arduino fundamentado na ideia de um sinal de transito (vermelho, amarelo e verde). ",
-    link: "https://github.com/Myguel-H/Arduino_Sistema_Sinaleiro.git",
+    link: "<a href='https://github.com/Myguel-H/Arduino_Sistema_Sinaleiro.git'>Link do projeto</a>",
+  },
+  {
+    name: "AgroGuia",
+    description: "Projeto criado durante o hackathon da semana academica de Sistemas de Informação da UTFPR/FB, com o objetivo de auxiliar no gerenciamento de pequenos agricultores/colonos por parte da secretaria de agricultura. Isso levou a incubação de uma empresa pela sprint da UTPFR",
+    link: ""
   },
 ];
 

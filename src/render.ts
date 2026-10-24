@@ -51,7 +51,7 @@ export function renderCertificates(
         .join("");
 }
 
-export function Projects (
+export function renderProjects (
     container: HTMLElement,
     list: Projects[]
 ): void {
