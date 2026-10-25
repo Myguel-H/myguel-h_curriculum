@@ -29,6 +29,7 @@ export function renderExperiences(
                 <p class="period" style="margin-bottom: 08px;">${exp.period}</p>
                 <p class="about">${exp.description}</p>
                 <p class="period" style="font-weight: bold; margin-top: 10px;">Setor: ${exp.sector}</p>
+                <a href="${exp.link}" target="_blank">Visualizar</a>
             </article>
             `
         )
@@ -45,7 +46,8 @@ export function renderCertificates(
         <article class="item">
             <h3>${cert.name}</h3>
             <p class="period">${cert.institution} - ${cert.duration}</p>
-        
+            <a href="${cert.link}" target="_blank">Visualizar</a>
+                    </article>
         `
         )
         .join("");

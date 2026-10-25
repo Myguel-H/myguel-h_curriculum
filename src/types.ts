@@ -10,6 +10,7 @@ export interface Experience {
     position: string;
     period: string;
     description: string;
+    link?: string;
 }
 
 export interface Education {
@@ -33,4 +34,5 @@ export interface Certificate {
     name: string;
     duration: string;   
     institution: string;
+    link?: string;
 }

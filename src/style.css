@@ -258,6 +258,7 @@ body.dark {
 
   .item a {
     color: var(--orange);
+    text-decoration: none;
   }
 
   /* ───────── Footer ───────── */
