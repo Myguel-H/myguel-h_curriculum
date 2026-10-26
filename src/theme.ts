@@ -5,7 +5,6 @@ function getStoredTheme(): "light" | "dark" | null {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved === "light" || saved === "dark") return saved;
   } catch {
-    /* localStorage indisponível (ex.: file:// em alguns navegadores) */
   }
   return null;
 }
@@ -41,12 +40,10 @@ export function setupThemeToggle(): void {
     try {
       localStorage.setItem(STORAGE_KEY, next);
     } catch {
-      /* ignora: segue apenas em memória */
     }
     applyTheme(next);
   });
 
-  // Se o usuário nunca escolheu manualmente, acompanha o sistema.
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", () => {

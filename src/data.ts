@@ -104,7 +104,6 @@ export const proj: Projects[] = [
 ];
 
 export const certificates: Certificate[] = [
-  // ═══ Alura (17) — primeiro ═══
   { name: "Carreira Desenvolvimento Back-End Java: Boas-vindas e primeiros passos", duration: "1h", institution: "Alura", link: "/certificates/cursos-alura/Carreira-Desenvolvimento-Back-End-Java-Boas-vindas-e-primeiros-passos.pdf" },
   { name: "Carreira Desenvolvimento Back-End PHP: Boas-vindas e primeiros passos", duration: "1h", institution: "Alura", link: "/certificates/cursos-alura/Carreira-Desenvolvimento-Back-End-PHP-Boas-vindas-e-primeiros-passos.pdf" },
   { name: "Começando em Programação: Carreira e Primeiros Passos", duration: "1h", institution: "Alura", link: "/certificates/cursos-alura/Curso-Comecando-em-Programacao-carreira-e-primeiros-passos.pdf" },
@@ -122,11 +121,9 @@ export const certificates: Certificate[] = [
   { name: "PHP: Criando Sua Aplicação", duration: "8h", institution: "Alura", link: "/certificates/cursos-alura/PHP-criando-sua-aplicacao.pdf" },
   { name: "Praticando Java: Condicionais If e Else", duration: "4h", institution: "Alura", link: "/certificates/cursos-alura/Curso-Praticando-Java-condicionais-if-e-else.pdf" },
   { name: "TypeScript Parte 1: Evoluindo Seu JavaScript", duration: "10h", institution: "Alura", link: "/certificates/cursos-alura/Curso-TypeScript-parte-1-evoluindo-seu-JavaScript.pdf" },
-  // ═══ Escola de Gestão do Paraná (EGP) ═══
   { name: "Lei Geral de Proteção de Dados e a Administração Pública", duration: "40h", institution: "Escola de Gestão do Paraná (EGP)", link: "/certificates/cursos-evg-e-ead/Lei-Geral-de-Protecao-de-Dados-e-a-Administracao-Publica.pdf" },
   { name: "Modalidades Licitatórias", duration: "2h", institution: "Escola de Gestão do Paraná (EGP)", link: "/certificates/cursos-evg-e-ead/Modalidades-Licitatorias.pdf" },
   { name: "Modalidades Licitatórias - EAD", duration: "2h", institution: "Escola de Gestão do Paraná (EGP)", link: "/certificates/cursos-evg-e-ead/Minicurso-Modalidades-Licitatorias-EAD.pdf" },
-  // ═══ UTFPR ═══
   { name: "UTFPR - 2º Simposio de Agronomia 2024", duration: "4h", institution: "UTFPR", link: "/certificates/certificados-utfpr/UTFPR-2o-Simposio-de-Agronomia-2024.pdf" },
   { name: "UTFPR - Conferência Municipal De Ciência, Tecnologia e Inovação 2024", duration: "4h", institution: "UTFPR", link: "/certificates/certificados-utfpr/UTFPR-Conferencia-Municipal-De-Ciencia-Tecnologia-e-Inovacao-2024.pdf" },
   { name: "UTFPR - II Abril Indígena - Roda de Conversa com Katú Mirim 2026", duration: "3h", institution: "UTFPR", link: "/certificates/certificados-utfpr/UTFPR-II-Abril-Indigena-Roda-de-Conversa-com-Katu-Mirim-2026.pdf" },
@@ -145,8 +142,6 @@ export const certificates: Certificate[] = [
   { name: "Dev_Pr-Dv_25", duration: "3h", institution: "Codaqui", link: "/certificates/certificados-eventos/Dev-Pr-Dv-25.pdf" },
   { name: "Php_Velho_Oeste_26", duration: "12h", institution: "PHP Velho Oeste", link: "/certificates/certificados-eventos/Php-Velho-Oeste-26.pdf" },
   // ═══ Formação Profissional ═══
-  { name: "Programa Aprendiz Gerar", duration: "142h", institution: "GERAR", link: "/certificates/certificados-avulso/GERAR-Menor-Aprendiz-25092024.pdf" },
   { name: "GERAR - Menor Aprendiz 25092024", duration: "142h", institution: "GERAR", link: "/certificates/certificados-avulso/GERAR-Menor-Aprendiz-25092024.pdf" },
-  { name: "Aprendizagem Profissional de Qualificação em Serviços Administrativos", duration: "1000h", institution: "SENAC/PR", link: "/certificates/certificados-avulso/SENAC-Menor-Aprendiz-14022023.pdf" },
   { name: "SENAC - Menor Aprendiz 14022023", duration: "1000h", institution: "SENAC/PR", link: "/certificates/certificados-avulso/SENAC-Menor-Aprendiz-14022023.pdf" },
 ];
