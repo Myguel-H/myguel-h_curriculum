@@ -299,3 +299,127 @@ body.dark {
     display: block;
     border: 1px solid var(--img-border);
   }
+
+  /* ───────── Mobile (celular) ───────── */
+  @media (max-width: 600px) {
+    body {
+      padding: 20px 14px;
+    }
+
+    header {
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .photo-wrap {
+      width: 100px;
+      height: 100px;
+    }
+
+    .photo-render {
+      width: 100px;
+      height: 100px;
+    }
+
+    #name {
+      font-size: 1.5rem;
+    }
+
+    #position {
+      font-size: 0.95rem;
+    }
+
+    .contact-row {
+      margin-top: 6px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .contact-row img {
+      width: 18px;
+      height: 18px;
+    }
+
+    #contact {
+      font-size: 0.85rem;
+    }
+
+    .sumary {
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 16px 0;
+    }
+
+    .sumary a {
+      font-size: 0.85rem;
+    }
+
+    .social-media {
+      gap: 16px;
+      padding: 14px 0;
+    }
+
+    .social-media img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .social-media a {
+      font-size: 0.8rem;
+    }
+
+    main {
+      margin-top: 32px;
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    section>h2 {
+      font-size: 1.05rem;
+      padding-bottom: 6px;
+      margin-bottom: 6px;
+    }
+
+    .item {
+      padding: 14px 0;
+    }
+
+    .item h3 {
+      font-size: 0.9rem;
+    }
+
+    .item .periodo {
+      font-size: 0.82rem;
+    }
+
+    .item p {
+      font-size: 0.85rem;
+    }
+
+    .gallery {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .gallery-item img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 18px;
+      font-size: 0.8rem;
+    }
+
+    .theme-toggle {
+      top: 12px;
+      right: 12px;
+      width: 36px;
+      height: 36px;
+    }
+  }
