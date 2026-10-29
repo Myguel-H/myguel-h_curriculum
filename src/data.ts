@@ -139,6 +139,7 @@ export const certificates: Certificate[] = [
   { name: "UTFPR - XIV Seminário de Extensão e Inovação & XXIX SEISICITE VOLUNTARIO", duration: "6h", institution: "UTFPR", link: "/certificates/certificados-utfpr/XIV-Seminario-de-Extensao-e-Inovacao-XXIX-SEISICITE-VOLUNTARIO.pdf" },
   // ═══ Eventos e Congressos ═══
   { name: "Latinoware_25", duration: "28h", institution: "Latinoware", link: "/certificates/certificados-eventos/Latinoware-25.pdf" },
+  { name: "Latinoware_26", duration: "27h", institution: "Latinoware", link: "/certificates/certificados-eventos/Latinoware-26.pdf" },
   { name: "Dev_Pr-Dv_25", duration: "3h", institution: "Codaqui", link: "/certificates/certificados-eventos/Dev-Pr-Dv-25.pdf" },
   { name: "Php_Velho_Oeste_26", duration: "12h", institution: "PHP Velho Oeste", link: "/certificates/certificados-eventos/Php-Velho-Oeste-26.pdf" },
   // ═══ Formação Profissional ═══
